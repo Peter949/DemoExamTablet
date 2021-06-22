@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.SignUp">
+
+    <TextView
+        android:id="@+id/authText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/yantramanav_thin"
+        android:text="Регистрация"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/authEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:fontFamily="@font/yantramanav_thin"
+        android:hint="email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/authText"
+        app:layout_constraintStart_toStartOf="@+id/authText"
+        app:layout_constraintTop_toBottomOf="@+id/authText" />
+
+    <EditText
+        android:id="@+id/authPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/yantramanav_thin"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/authEmail"
+        app:layout_constraintStart_toStartOf="@+id/authEmail"
+        app:layout_constraintTop_toBottomOf="@+id/authEmail" />
+
+    <EditText
+        android:id="@+id/authRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/yantramanav_thin"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/authPassword"
+        app:layout_constraintStart_toStartOf="@+id/authPassword"
+        app:layout_constraintTop_toBottomOf="@+id/authPassword" />
+
+    <EditText
+        android:id="@+id/authFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/yantramanav_thin"
+        android:hint="first name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/authRepeat"
+        app:layout_constraintStart_toStartOf="@+id/authRepeat"
+        app:layout_constraintTop_toBottomOf="@+id/authRepeat" />
+
+    <EditText
+        android:id="@+id/authLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/yantramanav_thin"
+        android:hint="last name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/authFirstName"
+        app:layout_constraintStart_toStartOf="@+id/authFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/authFirstName" />
+
+    <Button
+        android:id="@+id/authButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/for_button"
+        android:fontFamily="@font/yantramanav_thin"
+        android:text="Регистрация"
+        app:backgroundTint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/authLastName"
+        app:layout_constraintStart_toStartOf="@+id/authLastName"
+        app:layout_constraintTop_toBottomOf="@+id/authLastName" />
+
+    <TextView
+        android:id="@+id/authChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/yantramanav_thin"
+        android:text="Есть учетная запись"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
